@@ -7,13 +7,24 @@ public class OrderDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @ManyToOne
     private Order order;
+
     @ManyToOne
     private Product product;
+
     private int quantity;
 
     public OrderDetail() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Order getOrder() {
@@ -38,13 +49,5 @@ public class OrderDetail {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 }

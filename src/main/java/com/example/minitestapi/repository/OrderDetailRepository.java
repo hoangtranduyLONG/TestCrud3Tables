@@ -6,5 +6,5 @@ import com.example.minitestapi.model.OrderDetail;
         import org.springframework.stereotype.Repository;
 
 @Repository
-public interface OrderDetailRepository extends JpaRepository<OrderDetail, Long> {
+public interface OrderDetailRepository extends JpaRepository<OrderDetail,Long> {
 }
